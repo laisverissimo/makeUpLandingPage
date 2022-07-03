@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sen:wght@400;700;800&display=swap');
 @import url('./responsivo.css');
+
 * {
   margin: 0 auto;
 }
@@ -8,46 +9,46 @@ body {
   background-color: #FFFAFA;
 }
 
-header.inicio {
-  width: 997px;
-  margin: 0 auto;
+header a{
+  text-decoration: none;
+}
+
+header {
   display: flex;
-  justify-content: space-around;
-  box-shadow: inset 30px -1px 30px #FF490F;
+  flex:1;
+  justify-content: flex-start;
+  align-items: center;
+  padding:10px 64px;
+  border-bottom: 2px solid #FF490F;
 }
 
-header.inicio a img.logo {
-  position: absolute;
-  margin-top: 17px;
-  left: 74px;
-  Width: 25px;
-  Height: 40px;
+header a {
+  width: 30px;
 }
 
-header.inicio h1 {
-  position: absolute;
-  width: 103px;
-  height: 30px;
-  left: 118px;
-  top: 22px;
+header .container-title {
+  flex: 1;
+  justify-content: flex-start;
+}
 
+header .container-title h1 {
   font-family: 'Sen';
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
   color: #FF490F;
+  margin-left: 15px;
 }
 
-header.inicio nav ul {
-  position: absolute;
+header nav ul {
   display: flex;
   justify-content: space-between;
   padding: 22px;
   list-style: none;
 }
 
-nav ul li a {
+header nav ul li a {
   font-family: 'sen';
   font-style: normal;
   font-weight: 400;
@@ -57,17 +58,11 @@ nav ul li a {
   color: rgba(255, 73, 15, 1);
 }
 
-nav ul li a.btn {
+header nav ul li a.btn {
   margin: 8px;
   padding: 8px 20px;
-  font-family: 'sen';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  text-decoration: none;
   color: #FFFAFA;
   background-color: #412F2D;
-  border: none;
 }
 
 main section.firstSection {
